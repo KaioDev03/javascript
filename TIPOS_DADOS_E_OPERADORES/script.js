@@ -21,6 +21,9 @@ console.log("Salve meu\t amigo");
 //Concatenação
 console.log("Olá " + "kaio");
 
+//Template String
+console.log("Template Strings\n");
+console.log(`A soma dos números é ${2 + 45}`);
 
 //3- Boolean
 console.log(typeof true);
@@ -41,3 +44,39 @@ console.log(typeof Infinity);
 console.log(typeof -Infinity);
 console.log(typeof NaN);
 console.log(220 * "asd");
+
+
+/* Dados Booleanos */
+console.log(true);
+console.log(false);
+
+console.log(5 > 8);
+console.log(10 < 12);
+
+/* Comparação */
+console.log("Comparação");
+console.log(5 <= 5);
+console.log(5 < 5);
+console.log(10 == 9);
+console.log(10 != 9);
+
+/* Comparação de idêntico */
+console.log("Comparação de idêntico")
+console.log("Kaio" === "Kaio");
+console.log("Kaio" !== "kaio");
+console.log("Diego" !== "Kaio");
+
+/* Operadores lógicos */
+/* Servem para unir duas ou mais comparações  &&(AND) True se os 2 lados forem verdadeiros*/
+/* II(OR) True se pelo menos um dos lados for verdadeiro */
+/* !(NOT) este operador inverte o resultado */
+console.log("Operadores lógicos");
+console.log(5 > 10 && 10 > 5);
+console.log(5 > 10 || 10 > 5);
+console.log(!(5 > 10));
+
+/* Empty Values */
+console.log("Empty Values");
+console.log(typeof null, typeof undefined);
+console.log("null" == undefined);
+console.log("null" === undefined);
