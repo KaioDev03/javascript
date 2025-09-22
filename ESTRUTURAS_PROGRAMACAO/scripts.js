@@ -19,3 +19,67 @@ console.log(Math.max(10, 15, 20, 8, 30));
 console.log(Math.min(10, 15, 18, 8, 72));
 console.log(Math.floor(4.9));
 console.log(Math.floor(4.1));
+
+/* Console.x usado para debug e entender o que pode estar errado */
+console.log("Hello World");
+console.error("Isso é um erro");/* Error */
+console.warn("Isso é um aviso");/* Aviso, Alert */
+
+/* Estruturas de controle: If, Else, Else if */
+/* If é utilizado para verificar se uma condição é verdadeira(Booleano) */
+const m = 10;
+
+if (m > 5) {
+    console.log("M é maior do que 5");
+}
+
+const user = "João";
+
+if (user === "João") {
+    console.log("Olá João, tudo bem?");
+}
+
+if (user === "Maria") {
+    console.log("Olá Maria, tudo bem?");
+}
+
+console.log(user === "João", user === "Maria");
+
+/* Estrutura de controle Else */
+const loggedIn = false;
+
+if (loggedIn) {
+    console.log("Bem-vindo usuário!");
+} else {
+    console.log("Por favor, faça login.");
+}
+
+const q = 10;
+const w = 15;
+
+if (q > 5 && w > 20) {
+    console.log("Condição verdadeira");
+} else {
+    console.log("Condição falsa, não atendeu todas as condições.");
+}
+
+/* Else if usada criar atende novas condições */
+
+if (1 > 2) {
+    console.log("Teste");
+} else if (2 > 3) {
+    console.log("Teste 2");
+} else if(5 > 1) {
+    console.log("Correto!");
+}
+
+const userName = "Kaio";
+const userAge = 24;
+
+if (userName === "José") {
+    console.log("Bem vindo José!")
+} else if (userName === "Kaio" && userAge === 24) {
+    console.log("Bem vindo Kaio, você tem 24 anos!");
+} else {
+    console.log("Usuário não reconhecido.");
+}
