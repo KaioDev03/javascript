@@ -119,3 +119,59 @@ let r = 10;
 for (r; r > 0; r = r - 1) {
     console.log(`O R está diminuindo... ${r}`);
 }
+
+/* Forçando a saida do loop utilizando o Break */
+for (let g = 20; g > 10; g--) {
+    console.log(`O G está diminuindo... ${g}`);
+    if (g === 11) {
+        console.log("Chegou no 11, saindo do loop.");
+        break;
+    }
+}
+
+/* Continue (Pula um loop também) vai para a proxima condição */
+for (let s = 0; s < 10; s++) {
+    
+    if (s % 2 === 0) {
+        console.log(`O número ${s} é par, pulando...`);
+        continue;
+    }
+}
+
+/* Switch case (utilizando para fazer condições) utilizar sempre quando usar if/else com 3 ou mais condições */
+const job = "Estagiário";
+
+switch (job) {
+    case "Júnior":
+        console.log("Seu salário é de R$ 2.000,00");
+        break;
+    case "Pleno":
+        console.log("Seu salário é de R$ 4.000,00");
+        break;
+    case "Sênior":
+        console.log("Seu salário é de R$ 7.000,00");
+        break;
+    case "Estagiário":
+        console.log("Seu salário é de R$ 1.000,00");
+        break;
+    default:
+        console.log("Cargo não reconhecido.");
+        break;
+}
+
+/* Switch de forma errada */
+const l = 100;
+
+switch (l) {
+    case 50:
+        console.log("L é igual a 50");
+    
+    case 100:
+        console.log("L é igual a 100");
+    
+    case 150:
+        console.log("L é igual a 150");
+    
+    default:
+        console.log("L não é igual a 50, 100 ou 150");
+}
